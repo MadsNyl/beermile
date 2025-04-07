@@ -12,8 +12,8 @@ const lineups: { image: string, name: string, className?: string }[] = [
         name: 'Christian Ryssdal',
     },
     {
-        image: 'jonas.png',
-        name: 'Jonas Røisland',
+        image: 'simon.png',
+        name: 'Simon Kvalheim',
     },
     {
         image: 'oliver.png',
