@@ -7,6 +7,8 @@ import Location from '../sections/location'
 import FooterSection from '../sections/footer'
 import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
+import { HeroHeader } from './header'
+import Lineup from '../sections/lineup'
 
 const transitionVariants = {
     item: {
@@ -31,15 +33,7 @@ const transitionVariants = {
 export default function HeroSection() {
     return (
         <>
-            <div className="absolute z-20 flex w-full justify-between items-center md:p-3">
-                <Link to="/">
-                    <img
-                        src="/image/logo.png"
-                        alt="Logo"
-                        className="h-16 w-16 rounded-full"
-                    />
-                </Link>
-            </div>
+            <HeroHeader />
             <main className="overflow-hidden bg-neutral-950 text-white">
                 <div
                     aria-hidden
@@ -81,7 +75,7 @@ export default function HeroSection() {
                                             speedSegment={0.3}
                                             as="h1"
                                             className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                                            Nylund Le Beermile
+                                            Beerlund
                                         </TextEffect>
                                         <TextEffect
                                             preset="fade-in-blur"
@@ -122,73 +116,8 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </section>
-                <section className="bg-neutral-900 border-y border-y-neutral-800 py-16 md:py-32 mt-24">
-                    <div className="mx-auto max-w-6xl space-y-8  md:space-y-16">
-                        <h1 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl px-6">
-                            Årets lineup
-                        </h1>
-
-                        <InfiniteSlider
-                            className="pb-12"
-                            speedOnHover={20}
-                            gap={44}
-                        >
-
-                            <div className="space-y-1 w-[300px] md:w-[400px]">
-                                <img
-                                    src="/image/mads.png"
-                                    alt='Mads'
-                                    className='aspect-square w-full rounded-lg object-fit'
-                                />
-                                <h1 className="text-balance text-xl md:text-2xl">
-                                    Mads Nylund
-                                </h1>
-                            </div>
-
-                            <div className="space-y-1 w-[300px] md:w-[400px]">
-                                <img
-                                    src="/image/christian.png"
-                                    alt='Christian'
-                                    className='aspect-square w-full rounded-lg object-fit'
-                                />
-                                <h1 className="text-balance text-xl md:text-2xl">
-                                    Christian Ryssdal
-                                </h1>
-                            </div>
-
-                            <div className="space-y-1 w-[300px] md:w-[400px]">
-                                <img
-                                    src="/image/jonas.png"
-                                    alt='Jonas'
-                                    className='aspect-square w-full rounded-lg object-fit'
-                                />
-                                <h1 className="text-balance text-xl md:text-2xl">
-                                    Jonas Røisland
-                                </h1>
-                            </div>
-
-                            <div className="space-y-1 w-[300px] md:w-[400px]">
-                                <img
-                                    src="/image/oliver.png"
-                                    alt='Oliver'
-                                    className='aspect-square w-full rounded-lg object-cover'
-                                />
-                                <h1 className="text-balance text-xl md:text-2xl">
-                                    Oliver Sæther
-                                </h1>
-                            </div>
-                        </InfiniteSlider>
-                    </div>
-
-                    <div className="space-y-2 px-6 mx-auto max-w-6xl">
-                        <h1 className="text-2xl font-medium">
-                            Ønsker du å delta?
-                        </h1>
-                        <p>
-                            Ta kontakt med Mads Nylund for mer informasjon.
-                        </p>
-                    </div>
-                </section>
+            
+                <Lineup />
 
                 <Location />
 

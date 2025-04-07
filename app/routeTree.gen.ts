@@ -12,6 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as TreningsplanImport } from './routes/treningsplan'
+import { Route as FaqImport } from './routes/faq'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
@@ -19,6 +20,12 @@ import { Route as IndexImport } from './routes/index'
 const TreningsplanRoute = TreningsplanImport.update({
   id: '/treningsplan',
   path: '/treningsplan',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const FaqRoute = FaqImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -39,6 +46,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqImport
+      parentRoute: typeof rootRoute
+    }
     '/treningsplan': {
       id: '/treningsplan'
       path: '/treningsplan'
@@ -53,36 +67,41 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/faq': typeof FaqRoute
   '/treningsplan': typeof TreningsplanRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/faq': typeof FaqRoute
   '/treningsplan': typeof TreningsplanRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/faq': typeof FaqRoute
   '/treningsplan': typeof TreningsplanRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/treningsplan'
+  fullPaths: '/' | '/faq' | '/treningsplan'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/treningsplan'
-  id: '__root__' | '/' | '/treningsplan'
+  to: '/' | '/faq' | '/treningsplan'
+  id: '__root__' | '/' | '/faq' | '/treningsplan'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  FaqRoute: typeof FaqRoute
   TreningsplanRoute: typeof TreningsplanRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  FaqRoute: FaqRoute,
   TreningsplanRoute: TreningsplanRoute,
 }
 
@@ -97,11 +116,15 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/faq",
         "/treningsplan"
       ]
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/faq": {
+      "filePath": "faq.tsx"
     },
     "/treningsplan": {
       "filePath": "treningsplan.tsx"

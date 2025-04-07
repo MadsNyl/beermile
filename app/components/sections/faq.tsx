@@ -13,8 +13,8 @@ export default function FAQs() {
                             <p className="text-gray-400 mt-4">Løpets lengde er på en mile, som tilsvarer 1 609 meter. Dette vil tilsi 4 runder rundt idrettsbanen.</p>
 
                             <ol className="list-outside list-decimal space-y-2 pl-4">
-                                <li className="text-gray-400 mt-4">Løpet starter med at hver deltager må shugge en 0,33 liter flaske med øl.</li>
-                                <li className="text-gray-400 mt-4">For hver runde deltageren løper, så må det shugges en ny flaske med øl. Deltageren må åpne flasken selv. Det vil si at hver deltager må ha med en eller annen type flaskeåpner.</li>
+                                <li className="text-gray-400 mt-4">Løpet starter med at hver deltager må chugge en 0,33 liter flaske med øl.</li>
+                                <li className="text-gray-400 mt-4">For hver runde deltageren løper, så må det chugges en ny flaske med øl. Deltageren må åpne flasken selv. Det vil si at hver deltager må ha med en eller annen type flaskeåpner.</li>
                                 <li className="text-gray-400 mt-4">Første deltager i mål etter 4 øl og 4 runder, er vinneren av løpet.</li>
                             </ol>
                         </div>

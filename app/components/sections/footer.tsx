@@ -25,7 +25,7 @@ export default function FooterSection() {
                         </svg>
                     </a>
                 </div>
-                <span className="text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Nylund Le Beermile, Alle rettigheter reservert</span>
+                <span className="text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Beerlund, Alle rettigheter reservert</span>
             </div>
         </footer>
     )

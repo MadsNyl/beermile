@@ -1,3 +1,4 @@
+import { HeroHeader } from '@/components/blocks/header';
 import FooterSection from '@/components/sections/footer';
 import { createFileRoute, Link } from '@tanstack/react-router'
 
@@ -8,16 +9,8 @@ export const Route = createFileRoute('/treningsplan')({
 function RouteComponent() {
     return (
         <>
-            <div className="absolute z-20 flex w-full justify-between items-center md:p-3">
-                <Link to="/">
-                  <img
-                      src="/image/logo.png"
-                      alt="Logo"
-                      className="h-16 w-16 rounded-full"
-                  />
-                </Link>
-            </div>
-            <main className="overflow-hidden bg-neutral-950 text-white min-h-screen px-4">
+          <HeroHeader />
+          <main className="overflow-hidden bg-neutral-950 text-white min-h-screen px-4">
                 <div
                     aria-hidden
                     className="absolute inset-0 isolate opacity-65 contain-strict lg:block">
@@ -26,7 +19,7 @@ function RouteComponent() {
                     <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
                 </div>
 
-                <div className="space-y-12 pb-12 pt-20">
+                <div className="space-y-12 pb-12 pt-28">
                   <section className="max-w-4xl w-full mx-auto">
                     <img
                       src="/image/training.png"
@@ -38,11 +31,11 @@ function RouteComponent() {
                   <section className="w-full max-w-4xl mx-auto space-y-8">
                     <div className="space-y-4">
                       <h1 className="relative z-10 max-w-xl font-semibold text-2xl">
-                        Treningsplan for Nylund Le Beermile
+                        Treningsplan for Beerlund
                       </h1>
 
                       <p className="text-gray-200">
-                        Ved hjelp av en ekspert på området, har jeg fått utarbeidet en optimal treningsplan for å forberede meg til Nylund Le Beermile. Treningsplanen er delt opp i 6 uker. Det er viktig å følge planen nøye for å oppnå best mulig resultat.
+                        Ved hjelp av en ekspert på området, har jeg fått utarbeidet en optimal treningsplan for å forberede meg til Beerlund. Treningsplanen er delt opp i 6 uker. Det er viktig å følge planen nøye for å oppnå best mulig resultat.
                       </p>
 
                       <p>
