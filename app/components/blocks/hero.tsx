@@ -1,14 +1,13 @@
 import { AnimatedGroup } from '../motion/animated-group'
 import { TextEffect } from '../motion/text-effect'
 import CountdownClock from '../ui/clock'
-import { InfiniteSlider } from '../motion/infinite-slider'
 import FAQs from '../sections/faq'
 import Location from '../sections/location'
 import FooterSection from '../sections/footer'
 import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
 import { HeroHeader } from './header'
-import Lineup from '../sections/lineup'
+import LineupSection from '../sections/lineup-display'
 
 const transitionVariants = {
     item: {
@@ -116,8 +115,8 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </section>
-            
-                <Lineup />
+                                        
+                <LineupSection />
 
                 <Location />
 
