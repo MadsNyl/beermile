@@ -37,14 +37,35 @@ const faqItems: {
       question: 'Hvordan lager man en bocadillo?',
       answer: 'En bocadillo er en spansk sandwich laget med crusty brød og fylt med en liste spesifikke ingredienser. Du fyller bocadilloen med smør, stekte tomater, serranoskinke og brie. Hvis du hører noen andre si noe annet, så er det feil. Det er ingen andre måter å lage en bocadillo på.',
   },
+  {
+    id: 'item-6',
+    question: 'Drikker man eller spiser man flytende ting som suppe og yoghurt?',
+    answer: 'Nei, flytende ting som suppe og yoghurt er ikke mat. Du kan ikke spise flytende ting. Du kan drikke dem hvis du vil, men du kan ikke spise dem. Det er ingen unntak fra denne regelen.',
+  },
+  {
+    id: 'item-7',
+    question: 'Når er neste gang det er Cræzy dæys på Rema 1000?',
+    answer: 'Neste gang det er Cræzy dæys på Rema 1000 er 16. mai 2025. De selger Dahls øl på glassflaske.',
+  },
+  {
+    id: 'item-8',
+    question: 'Hvorfor er det så mange spørsmål om mat og drikke?',
+    answer: 'Fordi vi er en mat- og drikkenettside. Det er derfor vi har så mange spørsmål om mat og drikke. Hvis du ikke liker det, kan du gå til en annen nettside.',
+  },
+  {
+    id: 'item-9',
+    question: 'Hvorfor bet Mike Tyson han bokseren i øret?',
+    answer: 'Fordi han boksern ikke ville delta i Beerlund.',
+  }
+  
 ];
 
 function RouteComponent() {
   return (
     <>
       <HeroHeader />
-      <main className="overflow-hidden bg-background text-white min-h-screen px-4">
-      <section className="py-16 md:py-24">
+      <main className="overflow-hidden bg-background text-white min-h-screen">
+      <section className="py-24">
             <div className="mx-auto max-w-5xl px-4 md:px-6">
                 <div className="mx-auto max-w-xl text-center">
                     <h2 className="text-balance text-3xl font-bold md:text-4xl lg:text-5xl">Ofte stilte spørsmål</h2>
@@ -65,7 +86,11 @@ function RouteComponent() {
                                 <AccordionItem
                                     value={item.id}
                                     className="data-[state=open]:bg-card dark:data-[state=open]:bg-muted peer rounded-xl border-none px-7 py-1 data-[state=open]:border-none data-[state=open]:shadow-sm">
-                                    <AccordionTrigger className="cursor-pointer text-base hover:no-underline">{item.question}</AccordionTrigger>
+                                    <AccordionTrigger className="cursor-pointer text-base hover:no-underline">
+                                      <p className='text-start'>
+                                        {item.question}
+                                      </p>
+                                    </AccordionTrigger>
                                     <AccordionContent>
                                         <p className="text-base">{item.answer}</p>
                                     </AccordionContent>

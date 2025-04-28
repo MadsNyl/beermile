@@ -85,6 +85,16 @@ const members: {
         name: "Erle Røkke",
         avatar: "/image/erle.png",
         role: "Digital Forretningsutvikling"
+    },
+    {
+        name: "Brage Håtveit",
+        avatar: "/image/brage.png",
+        role: "Digital Forretningsutvikling"
+    },
+    {
+        name: "Brede Erland",
+        avatar: "/image/brede.png",
+        role: "Digital Forretningsutvikling"
     }
 ];
 
