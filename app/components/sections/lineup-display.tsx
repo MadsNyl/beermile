@@ -17,14 +17,14 @@ const members: {
         role: "MKI",
     },
     {
-        name: "Simon Kvalheim",
-        avatar: "/image/simon.png",
-        role: "Digital Forretningsutvikling",
-    },
-    {
         name: "Oliver Sæther",
         avatar: "/image/oliver.png",
         role: "Ryde",
+    },
+    {
+        name: "Simon Kvalheim",
+        avatar: "/image/simon.png",
+        role: "Digital Forretningsutvikling",
     },
     {
         name: "Sina Kolnes",
@@ -95,6 +95,11 @@ const members: {
         name: "Brede Erland",
         avatar: "/image/brede.png",
         role: "Digital Forretningsutvikling"
+    },
+    {
+        name: "Mateo Souto",
+        avatar: "/image/mateo.png",
+        role: "Digital Cybersikkerhet"
     }
 ];
 
@@ -108,6 +113,11 @@ const teamMembers: {
         name: "Jonas Røisland",
         avatar: "/image/jonas.png",
         role: "MKI",
+    },
+    {
+        name: "Gard Østensen",
+        avatar: "/image/gard.png",
+        role: "Digital Forretningsutvikling",
     }
 ];
 
