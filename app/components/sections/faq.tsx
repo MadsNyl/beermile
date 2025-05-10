@@ -24,7 +24,7 @@ export default function FAQs() {
                         </div>
                         <div className="py-6">
                             <h3 className="font-medium">Er det førstemann i mål som vinner?</h3>
-                            <p className="text-gray-400 my-4">Ikke nødvendigvis. I utgangspunktet er det førstemann i mål som vinner. Derimot er det en strafferunde for hver gang man spyr. Merk at hvis man spyr på banen er man diskvalifisert.</p>
+                            <p className="text-gray-400 my-4">Ikke nødvendigvis. I utgangspunktet er det førstemann i mål som vinner. Derimot legges det til en strafferunde i slutten av løpet hvis man spyr. Merk at hvis man spyr på banen er man diskvalifisert.</p>
                         </div>
                     </div>
                 </div>

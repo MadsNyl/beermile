@@ -25,7 +25,7 @@ const faqItems: {
   {
       id: 'item-3',
       question: 'Hva skjer hvis jeg spyr?',
-      answer: 'Hvis du spyr, må du ta en strafferunde. En strafferunde er en runde på 400 meter. Hvis du spyr på banen, blir du diskvalifisert fra løpet.',
+      answer: 'Hvis du spyr, legges det til en strafferunde i slutten av løpet. Du kan bli tildelt maks én strafferunde En strafferunde er en runde på 400 meter. Hvis du spyr på banen, blir du diskvalifisert fra løpet.',
   },
   {
       id: 'item-4',

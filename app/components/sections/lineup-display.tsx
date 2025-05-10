@@ -100,6 +100,21 @@ const members: {
         name: "Mateo Souto",
         avatar: "/image/mateo.png",
         role: "Digital Cybersikkerhet"
+    },
+    {
+        name: "Christine Enger",
+        avatar: "/image/christine.png",
+        role: "Økonomi og administrasjon"
+    },
+    {
+        name: "Nestor Izcara",
+        avatar: "/image/nestor.png",
+        role: "Doktorgrad i Bioteknologi"
+    },
+    {
+        name: "Callum Gran",
+        avatar: "/image/callum.png",
+        role: "Datateknologi"
     }
 ];
 
